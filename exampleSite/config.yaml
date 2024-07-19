@@ -126,9 +126,9 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Matthew."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
+    title: "Matthew Kao"
+    subtitle: "I graduated from UC Berkeley with a Bachelor's Degree in Computer Science at 19"
+    content: "A young software engineer specializing in web and mobile app development. I am currently looking for new opportunities post-graduation and am open to any opportunities in the field of computer science."
     image: /images/gradpic.jpg
     bottomImage:
       enable: true
@@ -141,13 +141,10 @@ params:
       newPage: false
     socialLinks:
       fontAwesomeIcons:
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/mattkao
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+          url: https://github.com/Matthew-Kao
 
   # About
   about:
