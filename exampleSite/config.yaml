@@ -146,43 +146,43 @@ params:
         - icon: fab fa-github
           url: https://github.com/Matthew-Kao
 
-    # skills
-    skills:
-      - category: "Frontend"
-        skills:
-          - "React"
-          - "Redux"
-          - "Next.js"
-          - "HTML"
-          - "CSS"
-          - "JavaScript"
-          - "Bootstrap"
-          - "Flutter"
-      - category: "Backend"
-        skills:
-          - "Node.js"
-          - "Python"
-          - "MySQL"
-          - "PostgreSQL"
-          - "MongoDB"
-          - "Firebase"
-      - category: "Languages"
-        skills:
-          - "Python"
-          - "C++"
-          - "Java"
-          - "C"
-          - "Dart"
-          - "Ruby"
-      - category: "Tools"
-        skills:
-          - "Git"
-          - "GitHub"
-          - "AWS"
-          - "GCP"
-          - "MongoDB"
-          - "RESTful"
-          - "Figma"
+  # skills
+  skills:
+    - category: "Frontend"
+      skills:
+        - "React"
+        - "Redux"
+        - "Next.js"
+        - "HTML"
+        - "CSS"
+        - "JavaScript"
+        - "Bootstrap"
+        - "Flutter"
+    - category: "Backend"
+      skills:
+        - "Node.js"
+        - "Python"
+        - "MySQL"
+        - "PostgreSQL"
+        - "MongoDB"
+        - "Firebase"
+    - category: "Languages"
+      skills:
+        - "Python"
+        - "C++"
+        - "Java"
+        - "C"
+        - "Dart"
+        - "Ruby"
+    - category: "Tools"
+      skills:
+        - "Git"
+        - "GitHub"
+        - "AWS"
+        - "GCP"
+        - "MongoDB"
+        - "RESTful"
+        - "Figma"
 
   # About
   about:
