@@ -1,0 +1,49 @@
+<div class="skills-section">
+    <h2>Skills</h2>
+    <p>Here are some of my skills on which I have been working on for the past 3 years.</p>
+    <div class="skills-categories">
+      {{ range .Site.Params.skills }}
+      <div class="skills-category">
+        <h3>{{ .category }}</h3>
+        <div class="skills-list">
+          {{ range .skills }}
+          <span class="skill-item">{{ . }}</span>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+  
+  <style>
+  .skills-section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .skills-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .skills-category {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 300px;
+  }
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .skill-item {
+    background: #444;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  </style>
+  

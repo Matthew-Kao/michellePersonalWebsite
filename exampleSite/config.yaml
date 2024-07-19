@@ -127,7 +127,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Matthew Kao"
-    subtitle: "I graduated from UC Berkeley with a Bachelor's Degree in Computer Science at 19"
+    subtitle: "Graduated from UC Berkeley with a Bachelor's Degree in Computer Science at 19"
     content: "A young software engineer specializing in web and mobile app development. I am currently looking for new opportunities post-graduation and am open to any opportunities in the field of computer science."
     image: /images/gradpic.jpg
     bottomImage:
@@ -145,6 +145,44 @@ params:
           url: https://linkedin.com/in/mattkao
         - icon: fab fa-github
           url: https://github.com/Matthew-Kao
+
+    # skills
+    skills:
+      - category: "Frontend"
+        skills:
+          - "React"
+          - "Redux"
+          - "Next.js"
+          - "HTML"
+          - "CSS"
+          - "JavaScript"
+          - "Bootstrap"
+          - "Flutter"
+      - category: "Backend"
+        skills:
+          - "Node.js"
+          - "Python"
+          - "MySQL"
+          - "PostgreSQL"
+          - "MongoDB"
+          - "Firebase"
+      - category: "Languages"
+        skills:
+          - "Python"
+          - "C++"
+          - "Java"
+          - "C"
+          - "Dart"
+          - "Ruby"
+      - category: "Tools"
+        skills:
+          - "Git"
+          - "GitHub"
+          - "AWS"
+          - "GCP"
+          - "MongoDB"
+          - "RESTful"
+          - "Figma"
 
   # About
   about:
