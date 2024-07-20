@@ -30,9 +30,15 @@
                                     <h6>
                                     {{ .school.name }}
                                     </h6>
+                                    {{ if .school.logo }}
+                                    <img src="/images/logos/{{ .school.logo }}" alt="{{ .school.name }} logo" class="edu-logo">
+                                    {{ end }}
                                 </a>
                                 {{ else }}
                                 {{ .school.name }}
+                                {{ if .school.logo }}
+                                <img src="/images/logos/{{ .school.logo }}" alt="{{ .school.name }} logo" class="edu-logo">
+                                {{ end }}
                                 {{ end }}
 
                                 {{ if .GPA }}
@@ -43,9 +49,12 @@
                                     </i> 
                                 </div>
                                 {{ end }}
+                                
+                                {{ if .content }}
                                 <div class="py-1 education-content">
                                     {{ .content | markdownify}}
                                 </div>
+                                {{ end }}
 
                                 {{ if .featuredLink.enable }}
                                 <div class="py-1">
@@ -64,3 +73,11 @@
     </div>
 </section>
 {{ end }}
+
+<style>
+.edu-logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-left: 10px;
+}
+</style>
