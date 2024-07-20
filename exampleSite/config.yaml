@@ -306,22 +306,19 @@ params:
           - "Smart Contracts"
           - "AWS"
         links:
-          - icon: fab fa-presentation
+          - icon: fab fa-google
             url: https://docs.google.com/presentation/d/1xeyuUe24Y-QnrahPsSqPCXbBhUcXJbVRDeKv8cKmkVg/edit#slide=id.g128c0204154_0_794
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+      - title: Ants vs Bees
+        content: Ants vs Bees is my favorite project, born out of my love for video games and my childhood dream to become a video game developer, which inspired me to major in Computer Science. This project involved creating a game similar to Plants vs Zombies, where I used Object-Oriented Programming to design different classes of ants and bees, each with unique abilities. I developed the game using Python and Tkinter for the GUI, implementing various abstract data structures to manage the game's state and logic.
+        image: /images/projects/antsvsbees.png
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Python"
+          - "GUI"
+          - "OOP"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/Matthew-Kao/Ants
 
   #Contact
   contact:
