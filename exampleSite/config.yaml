@@ -229,14 +229,14 @@ params:
         school:
           name: "University of California, Berkeley"
           url: "https://www.berkeley.edu/"
-          logo: "ucb.png"
+          logo: "logos/ucb.png"
         date: "2021 - 2023"
         GPA: "3.7 out of 4.0"
       - title: "Associate of Science in Computer Science"
         school:
           name: "Diablo Valley College"
           url: "https://www.dvc.edu/"
-          logo: "dvc.png"
+          logo: "logos/dvc.png"
         date: "2019 - 2021"
         GPA: "4.0 out of 4.0"
 
