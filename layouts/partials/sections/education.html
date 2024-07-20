@@ -20,32 +20,29 @@
                     <div class="col-md-9">
                         <div class="card">
                             <div class="card-body">
-                                <div class="float-end">
-                                    <small>{{ .date }}</small>
-                                </div>
-                                <h5 class="card-title">{{ .title }}</h5>
-                                
                                 <div class="school-info">
-                                    {{ if .school.url }}
-                                    <a href="{{ .school.url }}" target="_blank">
-                                        <h6 class="d-inline">{{ .school.name }}</h6>
-                                    </a>
-                                    {{ else }}
-                                    <h6 class="d-inline">{{ .school.name }}</h6>
-                                    {{ end }}
-                                    {{ if .school.logo }}
-                                    <img src="{{ .school.logo }}" alt="{{ .school.name }} logo" class="edu-logo">
-                                    {{ end }}
+                                    <img src="/images/logos/{{ .school.logo }}" alt="{{ .school.name }} logo" class="edu-logo">
+                                    <div class="school-details">
+                                        {{ if .school.url }}
+                                        <a href="{{ .school.url }}" target="_blank">
+                                            <h5 class="d-inline">{{ .school.name }}</h5>
+                                        </a>
+                                        {{ else }}
+                                        <h5 class="d-inline">{{ .school.name }}</h5>
+                                        {{ end }}
+                                        <div>
+                                            <small>{{ .date }}</small>
+                                        </div>
+                                        {{ if .GPA }}
+                                        <div class="py-1">
+                                            GPA:
+                                            <i>
+                                                <small>{{ .GPA }}</small>
+                                            </i> 
+                                        </div>
+                                        {{ end }}
+                                    </div>
                                 </div>
-
-                                {{ if .GPA }}
-                                <div class="py-1">
-                                    GPA:
-                                    <i>
-                                        <small>{{ .GPA }}</small>
-                                    </i> 
-                                </div>
-                                {{ end }}
 
                                 {{ if .content }}
                                 <div class="py-1 education-content">
@@ -73,16 +70,17 @@
 
 <style>
 .edu-logo {
-    width: 30px; /* Adjust size as needed */
+    width: 100px; /* Adjust size as needed */
     height: auto;
-    margin-left: 10px;
+    margin-right: 10px;
     vertical-align: middle;
-}
-.school-info h6 {
-    display: inline;
 }
 .school-info {
     display: flex;
     align-items: center;
+}
+.school-details {
+    display: flex;
+    flex-direction: column;
 }
 </style>
