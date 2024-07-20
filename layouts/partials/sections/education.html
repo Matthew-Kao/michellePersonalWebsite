@@ -26,8 +26,8 @@
                                 <h5 class="card-title">{{ .title }}</h5>
                                 
                                 {{ if .school.url }}
-                                <a href="{{ .school.url }}" target="_blank">
-                                    <h6>
+                                <a href="{{ .school.url }}" target="_blank" class="school-link">
+                                    <h6 class="d-inline">
                                     {{ .school.name }}
                                     </h6>
                                     {{ if .school.logo }}
@@ -49,7 +49,7 @@
                                     </i> 
                                 </div>
                                 {{ end }}
-                                
+
                                 {{ if .content }}
                                 <div class="py-1 education-content">
                                     {{ .content | markdownify}}
@@ -76,8 +76,12 @@
 
 <style>
 .edu-logo {
-    width: 50px; /* Adjust size as needed */
+    width: 30px; /* Adjust size as needed */
     height: auto;
     margin-left: 10px;
+    vertical-align: middle;
+}
+.school-link h6 {
+    display: inline;
 }
 </style>
