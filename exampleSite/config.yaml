@@ -286,9 +286,6 @@ params:
       - title: Resume Builder.AI
         content: ResumeBuilder.AI is an innovative solution designed to streamline the job application process by automatically tailoring resumes to specific job descriptions. Inspired by my own journey as a recent graduate facing the challenges of job hunting, this project leverages advanced AI technologies to enhance resume relevance and impact. Utilizing word2vec for word embeddings and Convex's vector search, the application compares job postings with a comprehensive list of projects and experiences, selecting the five most pertinent ones. Additionally, an LLM like OpenAI's GPT fine-tunes project descriptions to align perfectly with job requirements. Developed with a tech stack including Python, OpenAI, Gradio, Convex, LLM, word2vec, and GitHub.
         image: /images/projects/rbAI.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
         badges:
           - "Python"
           - "LLM"
@@ -298,21 +295,19 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/ronaldarifin/calhacks-10
-          - icon: fab fa-devpost
-            url: https://devpost.com/software/resumebuilder-ai
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+      - title: Cryptok
+        content: Cryptok is a Web3 social media platform developed to foster a more transparent and equitable environment for content distribution, particularly for digital creators and freelancers. As computer science students from Berkeley, we were motivated to dive into the world of Web3 by building our own project. Traditional Web2 platforms like YouTube have centralized control over content distribution, allowing them to prioritize or demote content based on their preferences. Cryptok disrupts this model by utilizing blockchain technology to ensure that user engagement directly influences content visibility through tokenized interactions. Each interaction, such as likes or comments, is recorded on the Ethereum blockchain via smart contracts, which store details like user ID, type of interaction, and timestamp, and calculate the number of tokens earned. Users can cash out tokens at any time, with token values fluctuating based on overall engagement.
+        image: /images/projects/cryptok.png
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Flutter"
+          - "Web3"
+          - "Solidity"
+          - "Smart Contracts"
+          - "AWS"
         links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+          - icon: fab fa-google
+            url: https://docs.google.com/presentation/d/1xeyuUe24Y-QnrahPsSqPCXbBhUcXJbVRDeKv8cKmkVg/edit#slide=id.g128c0204154_0_794
 
       - title: Hugo Profile V2
         content: A clean and simple Hugo template for personal portfolio and blog.
