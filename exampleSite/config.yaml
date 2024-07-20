@@ -285,7 +285,7 @@ params:
     items:
       - title: Resume Builder.AI
         content: ResumeBuilder.AI is an innovative solution designed to streamline the job application process by automatically tailoring resumes to specific job descriptions. Inspired by my own journey as a recent graduate facing the challenges of job hunting, this project leverages advanced AI technologies to enhance resume relevance and impact. Utilizing word2vec for word embeddings and Convex's vector search, the application compares job postings with a comprehensive list of projects and experiences, selecting the five most pertinent ones. Additionally, an LLM like OpenAI's GPT fine-tunes project descriptions to align perfectly with job requirements. Developed with a tech stack including Python, OpenAI, Gradio, Convex, LLM, word2vec, and GitHub.
-        image: /images/projects/profile.png
+        image: /images/projects/rbAI.png
         featured:
           name: Demo
           link: https://hugo-profile.netlify.app
