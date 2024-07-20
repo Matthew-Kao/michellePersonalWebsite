@@ -283,6 +283,18 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+
+      - title: Ants vs Bees
+      content: Ants vs Bees is my favorite project, born out of my love for video games and my childhood dream to become a video game developer, which inspired me to major in Computer Science. This project involved creating a game similar to Plants vs Zombies, where I used Object-Oriented Programming to design different classes of ants and bees, each with unique abilities. I developed the game using Python and Tkinter for the GUI, implementing various abstract data structures to manage the game's state and logic.
+      image: /images/projects/antsvsbees.png
+      badges:
+        - "Python"
+        - "GUI"
+        - "OOP"
+      links:
+        - icon: fab fa-github
+          url: https://github.com/Matthew-Kao/Ants
+          
       - title: Resume Builder.AI
         content: ResumeBuilder.AI is an innovative solution designed to streamline the job application process by automatically tailoring resumes to specific job descriptions. Inspired by my own journey as a recent graduate facing the challenges of job hunting, this project leverages advanced AI technologies to enhance resume relevance and impact. Utilizing word2vec for word embeddings and Convex's vector search, the application compares job postings with a comprehensive list of projects and experiences, selecting the five most pertinent ones. Additionally, an LLM like OpenAI's GPT fine-tunes project descriptions to align perfectly with job requirements. Developed with a tech stack including Python, OpenAI, Gradio, Convex, LLM, word2vec, and GitHub.
         image: /images/projects/rbAI.png
@@ -309,16 +321,7 @@ params:
           - icon: fab fa-google
             url: https://docs.google.com/presentation/d/1xeyuUe24Y-QnrahPsSqPCXbBhUcXJbVRDeKv8cKmkVg/edit#slide=id.g128c0204154_0_794
 
-      - title: Ants vs Bees
-        content: Ants vs Bees is my favorite project, born out of my love for video games and my childhood dream to become a video game developer, which inspired me to major in Computer Science. This project involved creating a game similar to Plants vs Zombies, where I used Object-Oriented Programming to design different classes of ants and bees, each with unique abilities. I developed the game using Python and Tkinter for the GUI, implementing various abstract data structures to manage the game's state and logic.
-        image: /images/projects/antsvsbees.png
-        badges:
-          - "Python"
-          - "GUI"
-          - "OOP"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/Matthew-Kao/Ants
+
 
   #Contact
   contact:
