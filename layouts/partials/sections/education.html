@@ -25,21 +25,18 @@
                                 </div>
                                 <h5 class="card-title">{{ .title }}</h5>
                                 
-                                {{ if .school.url }}
-                                <a href="{{ .school.url }}" target="_blank" class="school-link">
-                                    <h6 class="d-inline">
-                                    {{ .school.name }}
-                                    </h6>
+                                <div class="school-info">
+                                    {{ if .school.url }}
+                                    <a href="{{ .school.url }}" target="_blank">
+                                        <h6 class="d-inline">{{ .school.name }}</h6>
+                                    </a>
+                                    {{ else }}
+                                    <h6 class="d-inline">{{ .school.name }}</h6>
+                                    {{ end }}
                                     {{ if .school.logo }}
                                     <img src="/images/logos/{{ .school.logo }}" alt="{{ .school.name }} logo" class="edu-logo">
                                     {{ end }}
-                                </a>
-                                {{ else }}
-                                {{ .school.name }}
-                                {{ if .school.logo }}
-                                <img src="/images/logos/{{ .school.logo }}" alt="{{ .school.name }} logo" class="edu-logo">
-                                {{ end }}
-                                {{ end }}
+                                </div>
 
                                 {{ if .GPA }}
                                 <div class="py-1">
@@ -81,7 +78,11 @@
     margin-left: 10px;
     vertical-align: middle;
 }
-.school-link h6 {
+.school-info h6 {
     display: inline;
+}
+.school-info {
+    display: flex;
+    align-items: center;
 }
 </style>
