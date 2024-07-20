@@ -306,7 +306,7 @@ params:
           - "Smart Contracts"
           - "AWS"
         links:
-          - icon: fab fa-google
+          - icon: fab fa-presentation
             url: https://docs.google.com/presentation/d/1xeyuUe24Y-QnrahPsSqPCXbBhUcXJbVRDeKv8cKmkVg/edit#slide=id.g128c0204154_0_794
 
       - title: Hugo Profile V2
