@@ -255,11 +255,6 @@ params:
         companyUrl: "https://dbrief.ai"
         date: "May 2022 - Dec 2022"
         content: "At DBRIEF.AI in Berkeley, CA, as the Lead App Developer, I successfully led the development of their mobile application from scratch, utilizing Dart and Flutter. My role encompassed designing the user interface with Figma, adhering to UX design best practices and integrating user feedback to enhance overall usability and satisfaction. I was instrumental in architecting the backend API synchronization, facilitating dynamic content updates aligned with the latest news, which contributed to a significant 15% growth in daily active users. I harnessed Firebase's real-time database capabilities for dynamic data updates, thus enhancing the app's responsiveness and ensuring timely information delivery to users. My innovation included developing a 'Tinder-style' swiping feature, leading to a 20% increase in user engagement time. Furthermore, I guided and mentored a team of four through agile development cycles, ensuring cross-functional collaboration and timely application delivery."
-      - job: "Lead Mobile Developer"
-        company: "Dbrief.AI"
-        companyUrl: "https://dbrief.ai"
-        date: "May 2022 - Dec 2022"
-        content: "At DBRIEF.AI in Berkeley, CA, as the Lead App Developer, I successfully led the development of their mobile application from scratch, utilizing Dart and Flutter. My role encompassed designing the user interface with Figma, adhering to UX design best practices and integrating user feedback to enhance overall usability and satisfaction. I was instrumental in architecting the backend API synchronization, facilitating dynamic content updates aligned with the latest news, which contributed to a significant 15% growth in daily active users. I harnessed Firebase's real-time database capabilities for dynamic data updates, thus enhancing the app's responsiveness and ensuring timely information delivery to users. My innovation included developing a 'Tinder-style' swiping feature, leading to a 20% increase in user engagement time. Furthermore, I guided and mentored a team of four through agile development cycles, ensuring cross-functional collaboration and timely application delivery."
 
   # Achievements
   achievements:
@@ -288,23 +283,23 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
+      - title: Resume Builder.AI
+        content: ResumeBuilder.AI is an innovative solution designed to streamline the job application process by automatically tailoring resumes to specific job descriptions. Inspired by my own journey as a recent graduate facing the challenges of job hunting, this project leverages advanced AI technologies to enhance resume relevance and impact. Utilizing word2vec for word embeddings and Convex's vector search, the application compares job postings with a comprehensive list of projects and experiences, selecting the five most pertinent ones. Additionally, an LLM like OpenAI's GPT fine-tunes project descriptions to align perfectly with job requirements. Developed with a tech stack including Python, OpenAI, Gradio, Convex, LLM, word2vec, and GitHub.
         image: /images/projects/profile.png
         featured:
           name: Demo
           link: https://hugo-profile.netlify.app
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Python"
+          - "LLM"
+          - "Gradio"
+          - "Convex"
+          - "Word2Vec"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://github.com/ronaldarifin/calhacks-10
+          - icon: fab fa-devpost
+            url: https://devpost.com/software/resumebuilder-ai
 
       - title: Image Converter
         content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
