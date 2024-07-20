@@ -185,7 +185,7 @@ params:
         - name: "C"
           logo: "logos/c.png"
         - name: "Dart"
-          logo: "logos/ucb.png"
+          logo: "logos/dart.png"
         - name: "Ruby"
           logo: "logos/ruby.png"
     - category: "Tools"
