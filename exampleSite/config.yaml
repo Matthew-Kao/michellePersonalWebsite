@@ -248,12 +248,22 @@ params:
       - job: "Web Developer"
         company: "Certified Employment Group"
         companyUrl: "https://www.certifiedemployment.com/job-openings.php"
+        info:
+          enable: false
         date: "Oct 2023 - Mar 2024"
+        featuredLink:
+          enable: true
+          url: "https://www.certifiedemployment.com/job-openings.php"
         content: "At Certified Employment Group, I spearheaded the revitalization of web interfaces, employing HTML5, CSS, and JavaScript to significantly improve user experience. My expertise in utilizing Flutter enabled a seamless, responsive design across various devices, enhancing accessibility and consistency. By developing Python-based server-side applications, I introduced advanced algorithms for data caching and asynchronous processing, which notably reduced API response times and optimized database query efficiency. Implementing a comprehensive Selenium testing framework, I achieved a remarkable 96% pass rate on automated tests, substantially minimizing production bugs and bolstering the web application's reliability. My efforts not only refined the technical landscape but also fostered a more engaging and dependable user environment."
       - job: "Lead Mobile Developer"
         company: "Dbrief.AI"
         companyUrl: "https://dbrief.ai"
+        info:
+          enable: false
         date: "May 2022 - Dec 2022"
+        featuredLink:
+          enable: true
+          url: "https://dbrief.ai"
         content: "At DBRIEF.AI in Berkeley, CA, as the Lead App Developer, I successfully led the development of their mobile application from scratch, utilizing Dart and Flutter. My role encompassed designing the user interface with Figma, adhering to UX design best practices and integrating user feedback to enhance overall usability and satisfaction. I was instrumental in architecting the backend API synchronization, facilitating dynamic content updates aligned with the latest news, which contributed to a significant 15% growth in daily active users. I harnessed Firebase's real-time database capabilities for dynamic data updates, thus enhancing the app's responsiveness and ensuring timely information delivery to users. My innovation included developing a 'Tinder-style' swiping feature, leading to a 20% increase in user engagement time. Furthermore, I guided and mentored a team of four through agile development cycles, ensuring cross-functional collaboration and timely application delivery."
 
   # # Achievements
