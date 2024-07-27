@@ -257,7 +257,7 @@ params:
           At Certified Employment Group, I spearheaded the revitalization of web interfaces, employing HTML5, CSS, and JavaScript to significantly improve user experience. My expertise in utilizing Flutter enabled a seamless, responsive design across various devices, enhancing accessibility and consistency. By developing Python-based server-side applications, I introduced advanced algorithms for data caching and asynchronous processing, which notably reduced API response times and optimized database query efficiency. Implementing a comprehensive Selenium testing framework, I achieved a remarkable 96% pass rate on automated tests, substantially minimizing production bugs and bolstering the web application's reliability. My efforts not only refined the technical landscape but also fostered a more engaging and dependable user environment.
 
       - job: "Lead Mobile Developer"
-        company: "Dbrief.AI"
+        company: "Dbrief"
         companyUrl: "https://dbrief.ai"
         date: "2022-05-01 - 2022-12-31"
         info:
