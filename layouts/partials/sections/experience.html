@@ -47,35 +47,40 @@
                             id='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}'
                             aria-labelledby='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}-tab'
                         >
-                            <div>
-                                <span class="h4">{{ .job }}</span>
-                                <small>-</small>
-                                <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
-                                <div class="pb-1">
-                                    <small>{{ .date }}</small>
-                                    {{ if .info.enable | default true }}
-                                    <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title={{ .info.content | default (print "Working as a " .job " at " .company ) }}
-                                        >
-                                            <i class="fas fa-info-circle fa-xs"></i>
-                                        </span>
-                                    </span>
-                                    {{ end }}
-                                </div>
-
-                                {{ if .featuredLink.enable | default false }}
-                                <div class="py-2 featuredLink">
-                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
-                                        {{ .featuredLink.name | default "Featured Link" }} 
-                                    </a>
+                            <div class="d-flex align-items-center">
+                                {{ if .logo }}
+                                <div class="exp-logo-wrapper">
+                                    <img src="{{ .logo | relURL }}" alt="{{ .company }} logo" class="exp-logo">
                                 </div>
                                 {{ end }}
+                                <div class="ms-3">
+                                    <span class="h4">{{ .job }}</span>
+                                    <small>-</small>
+                                    <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                                    <div class="pb-1">
+                                        <small>{{ .date }}</small>
+                                        {{ if .info.enable | default true }}
+                                        <span class="p-2">
+                                            <span 
+                                                style="cursor: pointer;" 
+                                                data-bs-toggle="tooltip" 
+                                                data-bs-placement="top" 
+                                                data-bs-original-title={{ .info.content | default (print "Working as a " .job " at " .company ) }}
+                                            >
+                                                <i class="fas fa-info-circle fa-xs"></i>
+                                            </span>
+                                        </span>
+                                        {{ end }}
+                                    </div>
+                                    {{ if .featuredLink.enable | default false }}
+                                    <div class="py-2 featuredLink">
+                                        <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
+                                            {{ .featuredLink.name | default "Featured Link" }} 
+                                        </a>
+                                    </div>
+                                    {{ end }}
+                                </div>
                             </div>
-
                             {{ .content | markdownify}}
                         </div>
                         {{ else }}
@@ -85,36 +90,40 @@
                             id='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}'
                             aria-labelledby='pills-{{ replace .company " " "-" }}-{{ replace .date " " "-" }}-tab'
                         >
-                            <div>
-                                <span class="h4">{{ .job }}</span>
-                                <small>-</small>
-                                <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
-                                
-                                <div class="pb-1">
-                                    <small>{{ .date }}</small>
-                                    {{ if .info.enable | default true }}
-                                    <span class="p-2">
-                                        <span 
-                                            style="cursor: pointer;" 
-                                            data-bs-toggle="tooltip" 
-                                            data-bs-placement="top" 
-                                            data-bs-original-title={{ .info.content | default (print "Worked as a " .job " at " .company ) }}
-                                        > 
-                                            <i class="fas fa-info-circle fa-xs"></i>
-                                        </span>
-                                    </span>
-                                    {{ end }}
-                                </div>
-                                
-                                {{ if .featuredLink.enable | default false }}
-                                <div class="py-2 featuredLink">
-                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
-                                        {{ .featuredLink.name | default "Featured Link" }} 
-                                    </a>
+                            <div class="d-flex align-items-center">
+                                {{ if .logo }}
+                                <div class="exp-logo-wrapper">
+                                    <img src="{{ .logo | relURL }}" alt="{{ .company }} logo" class="exp-logo">
                                 </div>
                                 {{ end }}
+                                <div class="ms-3">
+                                    <span class="h4">{{ .job }}</span>
+                                    <small>-</small>
+                                    <a href="{{ .companyUrl }}" target="_blank">{{ .company }}</a>
+                                    <div class="pb-1">
+                                        <small>{{ .date }}</small>
+                                        {{ if .info.enable | default true }}
+                                        <span class="p-2">
+                                            <span 
+                                                style="cursor: pointer;" 
+                                                data-bs-toggle="tooltip" 
+                                                data-bs-placement="top" 
+                                                data-bs-original-title={{ .info.content | default (print "Worked as a " .job " at " .company ) }}
+                                            > 
+                                                <i class="fas fa-info-circle fa-xs"></i>
+                                            </span>
+                                        </span>
+                                        {{ end }}
+                                    </div>
+                                    {{ if .featuredLink.enable | default false }}
+                                    <div class="py-2 featuredLink">
+                                        <a class="p-2 px-4 btn btn-outline-primary btn-sm" href={{ .featuredLink.url | default "#" }} target="_blank">
+                                            {{ .featuredLink.name | default "Featured Link" }} 
+                                        </a>
+                                    </div>
+                                    {{ end }}
+                                </div>
                             </div>
-
                             <div class="pt-2">
                                 {{ .content | markdownify}}
                             </div>
@@ -128,3 +137,23 @@
     </div>
 </section>
 {{ end }}
+
+<style>
+.exp-logo-wrapper {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exp-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+</style>
