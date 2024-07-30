@@ -198,6 +198,8 @@ params:
           logo: "logos/gcp.png"
         - name: "Figma"
           logo: "logos/figma.png"
+        - name: "Postman"
+          logo: "logos/postman.png"
 
   # About
   # about:
