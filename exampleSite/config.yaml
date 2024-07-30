@@ -231,7 +231,7 @@ params:
         school:
           name: "University of California, Berkeley"
           url: "https://www.berkeley.edu/"
-          logo: "logos/CEG.jpeg"
+          logo: "logos/ucb2.png"
         date: "2021 - 2023"
         GPA: "3.7 out of 4.0"
       - title: "Associate of Science in Computer Science"
@@ -249,7 +249,7 @@ params:
       - job: "Web Developer"
         company: "Certified Employment Group"
         companyUrl: "https://www.certifiedemployment.com/job-openings.php"
-        logo: "logos/ruby.png"
+        logo: "logos/CEG.jpeg"
         date: "2023-10-01 - 2024-03-31"
         info:
           enable: false
