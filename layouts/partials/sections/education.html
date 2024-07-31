@@ -8,6 +8,9 @@
                     background: #222; /* Match with education section background color */
                     padding: 0.5rem 1rem;
                     border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 .edu-logo {
@@ -37,7 +40,6 @@
 
                 .education-card {
                     display: flex;
-                    flex-wrap: wrap;
                     justify-content: space-between;
                     align-items: flex-start;
                 }
@@ -54,6 +56,22 @@
                     flex: 1;
                     min-width: 250px;
                 }
+
+                .left-column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .left-top {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .left-bottom {
+                    margin-top: 1rem;
+                }
             </style>
             {{ range .Site.Params.education.items }}
             <div class="col-12 p-0">
@@ -61,31 +79,35 @@
                     <div class="col-md-9">
                         <div class="card">
                             <div class="card-body education-card">
-                                <div class="education-details">
-                                    {{ if .school.logo }}
-                                    <div class="edu-logo-wrapper">
-                                        <img src="{{ .school.logo | relURL }}" alt="{{ .school.name }} logo" class="edu-logo transparent-bg">
+                                <div class="left-column">
+                                    <div class="left-top">
+                                        {{ if .school.logo }}
+                                        <div class="edu-logo-wrapper">
+                                            <img src="{{ .school.logo | relURL }}" alt="{{ .school.name }} logo" class="edu-logo transparent-bg">
+                                        </div>
+                                        {{ end }}
                                     </div>
-                                    {{ end }}
-                                    <div class="ms-3">
-                                        {{ if .school.url }}
-                                        <a href="{{ .school.url }}" target="_blank">
-                                            <h5 class="mb-0">{{ .school.name }}</h5>
-                                        </a>
-                                        {{ else }}
-                                        <h5 class="mb-0">{{ .school.name }}</h5>
-                                        {{ end }}
+                                    <div class="left-bottom">
                                         <div>
-                                            <small>{{ .date }}</small>
+                                            {{ if .school.url }}
+                                            <a href="{{ .school.url }}" target="_blank">
+                                                <h5 class="mb-0">{{ .school.name }}</h5>
+                                            </a>
+                                            {{ else }}
+                                            <h5 class="mb-0">{{ .school.name }}</h5>
+                                            {{ end }}
+                                            <div>
+                                                <small>{{ .date }}</small>
+                                            </div>
+                                            {{ if .GPA }}
+                                            <div class="py-1">
+                                                GPA:
+                                                <i>
+                                                    <small>{{ .GPA }}</small>
+                                                </i>
+                                            </div>
+                                            {{ end }}
                                         </div>
-                                        {{ if .GPA }}
-                                        <div class="py-1">
-                                            GPA:
-                                            <i>
-                                                <small>{{ .GPA }}</small>
-                                            </i>
-                                        </div>
-                                        {{ end }}
                                     </div>
                                 </div>
                                 {{ if eq .school.name "University of California, Berkeley" }}
