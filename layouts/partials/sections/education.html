@@ -26,24 +26,24 @@
                 }
 
                 .course-list {
+                    list-style-type: disc;
+                    padding-left: 20px;
                     display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
-                    height: 100%;
+                    flex-wrap: wrap;
+                    gap: 20px; /* Add space between list items */
                 }
 
                 .course-list li {
                     display: flex;
                     align-items: center;
-                    margin-bottom: 20px;
+                    width: 45%; /* Adjust to fit two items per row */
+                    margin-bottom: 10px;
                 }
 
                 .course-logo {
-                    width: 50px; /* Adjust size as needed */
-                    height: auto;
-                    display: inline-block;
-                    vertical-align: middle;
+                    width: 50px; /* Fixed width */
+                    height: 50px; /* Fixed height */
+                    object-fit: contain; /* Maintain aspect ratio */
                     margin-right: 10px;
                 }
 
@@ -64,10 +64,6 @@
                 .relevant-courses {
                     flex: 1;
                     min-width: 250px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    align-items: center;
                 }
 
                 .left-column {
@@ -128,19 +124,19 @@
                                     <h6>Relevant Courses:</h6>
                                     <ul class="course-list">
                                         <li>
-                                            <img src="/logos/ucb1.png" alt="Course Logo" class="course-logo">
+                                            <img src="/logos/cs70.png" alt="CS70 Logo" class="course-logo">
                                             COMPSCI 70 - Discrete Mathematics and Probability Theory
                                         </li>
                                         <li>
-                                            <img src="/logos/ucb2.png" alt="Course Logo" class="course-logo">
+                                            <img src="/logos/cs188.png" alt="CS188 Logo" class="course-logo">
                                             COMPSCI 188 - Artificial Intelligence
                                         </li>
                                         <li>
-                                            <img src="/logos/ucb3.png" alt="Course Logo" class="course-logo">
+                                            <img src="/logos/cs161.png" alt="CS161 Logo" class="course-logo">
                                             COMPSCI 161 - Computer Security
                                         </li>
                                         <li>
-                                            <img src="/logos/ucb4.png" alt="Course Logo" class="course-logo">
+                                            <img src="/logos/cs186.png" alt="CS186 Logo" class="course-logo">
                                             COMPSCI 186 - Introduction to Database Systems
                                         </li>
                                     </ul>
