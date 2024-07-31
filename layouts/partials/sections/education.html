@@ -34,38 +34,80 @@
                     vertical-align: middle;
                     margin-right: 10px;
                 }
+
+                .education-card {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+
+                .education-details {
+                    flex: 1;
+                    min-width: 250px;
+                }
+
+                .relevant-courses {
+                    flex: 1;
+                    min-width: 250px;
+                }
             </style>
             {{ range .Site.Params.education.items }}
             <div class="col-12 p-0">
                 <div class="row align-items-center justify-content-center m-1 mb-4">
                     <div class="col-md-9">
                         <div class="card">
-                            <div class="card-body d-flex align-items-center">
-                                {{ if .school.logo }}
-                                <div class="edu-logo-wrapper">
-                                    <img src="{{ .school.logo | relURL }}" alt="{{ .school.name }} logo" class="edu-logo transparent-bg">
+                            <div class="card-body education-card">
+                                <div class="education-details">
+                                    {{ if .school.logo }}
+                                    <div class="edu-logo-wrapper">
+                                        <img src="{{ .school.logo | relURL }}" alt="{{ .school.name }} logo" class="edu-logo transparent-bg">
+                                    </div>
+                                    {{ end }}
+                                    <div class="ms-3">
+                                        {{ if .school.url }}
+                                        <a href="{{ .school.url }}" target="_blank">
+                                            <h5 class="mb-0">{{ .school.name }}</h5>
+                                        </a>
+                                        {{ else }}
+                                        <h5 class="mb-0">{{ .school.name }}</h5>
+                                        {{ end }}
+                                        <div>
+                                            <small>{{ .date }}</small>
+                                        </div>
+                                        {{ if .GPA }}
+                                        <div class="py-1">
+                                            GPA:
+                                            <i>
+                                                <small>{{ .GPA }}</small>
+                                            </i>
+                                        </div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                                {{ if eq .school.name "University of California, Berkeley" }}
+                                <div class="relevant-courses">
+                                    <h6>Relevant Courses:</h6>
+                                    <ul class="course-list">
+                                        <li>
+                                            <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
+                                            COMPSCI 70 - Discrete Mathematics and Probability Theory
+                                        </li>
+                                        <li>
+                                            <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
+                                            COMPSCI 188 - Artificial Intelligence
+                                        </li>
+                                        <li>
+                                            <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
+                                            COMPSCI 161 - Computer Security
+                                        </li>
+                                        <li>
+                                            <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
+                                            COMPSCI 186 - Introduction to Database Systems
+                                        </li>
+                                    </ul>
                                 </div>
                                 {{ end }}
-                                <div class="ms-3">
-                                    {{ if .school.url }}
-                                    <a href="{{ .school.url }}" target="_blank">
-                                        <h5 class="mb-0">{{ .school.name }}</h5>
-                                    </a>
-                                    {{ else }}
-                                    <h5 class="mb-0">{{ .school.name }}</h5>
-                                    {{ end }}
-                                    <div>
-                                        <small>{{ .date }}</small>
-                                    </div>
-                                    {{ if .GPA }}
-                                    <div class="py-1">
-                                        GPA:
-                                        <i>
-                                            <small>{{ .GPA }}</small>
-                                        </i>
-                                    </div>
-                                    {{ end }}
-                                </div>
                             </div>
                             {{ if .content }}
                             <div class="py-1 education-content">
@@ -77,30 +119,6 @@
                                 <a href="{{ .featuredLink.url }}" class="btn">
                                     {{ .featuredLink.name | default "Featured" }}
                                 </a>
-                            </div>
-                            {{ end }}
-                            <!-- Adding relevant courses with logo -->
-                            {{ if eq .school.name "University of California, Berkeley" }}
-                            <div class="py-1">
-                                <h6>Relevant Courses:</h6>
-                                <ul class="course-list">
-                                    <li>
-                                        <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
-                                        COMPSCI 70 - Discrete Mathematics and Probability Theory
-                                    </li>
-                                    <li>
-                                        <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
-                                        COMPSCI 188 - Artificial Intelligence
-                                    </li>
-                                    <li>
-                                        <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
-                                        COMPSCI 161 - Computer Security
-                                    </li>
-                                    <li>
-                                        <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
-                                        COMPSCI 186 - Introduction to Database Systems
-                                    </li>
-                                </ul>
                             </div>
                             {{ end }}
                         </div>
