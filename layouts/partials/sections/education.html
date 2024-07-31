@@ -21,6 +21,19 @@
                 .transparent-bg {
                     background-color: transparent !important;
                 }
+
+                .course-list {
+                    list-style-type: disc;
+                    padding-left: 20px;
+                }
+
+                .course-logo {
+                    width: 50px; /* Adjust size as needed */
+                    height: auto;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
             </style>
             {{ range .Site.Params.education.items }}
             <div class="col-12 p-0">
@@ -64,6 +77,30 @@
                                 <a href="{{ .featuredLink.url }}" class="btn">
                                     {{ .featuredLink.name | default "Featured" }}
                                 </a>
+                            </div>
+                            {{ end }}
+                            <!-- Adding relevant courses with logo -->
+                            {{ if eq .school.name "University of California, Berkeley" }}
+                            <div class="py-1">
+                                <h6>Relevant Courses:</h6>
+                                <ul class="course-list">
+                                    <li>
+                                        <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
+                                        COMPSCI 70 - Discrete Mathematics and Probability Theory
+                                    </li>
+                                    <li>
+                                        <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
+                                        COMPSCI 188 - Artificial Intelligence
+                                    </li>
+                                    <li>
+                                        <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
+                                        COMPSCI 161 - Computer Security
+                                    </li>
+                                    <li>
+                                        <img src="/path/to/course-logo.png" alt="Course Logo" class="course-logo">
+                                        COMPSCI 186 - Introduction to Database Systems
+                                    </li>
+                                </ul>
                             </div>
                             {{ end }}
                         </div>

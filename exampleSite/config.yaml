@@ -188,6 +188,8 @@ params:
           logo: "logos/dart.png"
         - name: "Ruby"
           logo: "logos/ruby.png"
+        - name: "SQL"
+          logo: "logos/sql.png"
     - category: "Tools"
       skills:
         - name: "GitHub"
