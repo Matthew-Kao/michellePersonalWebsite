@@ -26,19 +26,19 @@
                 }
 
                 .course-list {
-                    list-style-type: none;
-                    padding-left: 0;
+                    list-style-type: disc;
+                    padding-left: 20px;
                     display: flex;
-                    justify-content: space-around;
                     flex-wrap: wrap;
+                    gap: 20px; /* Add space between list items */
+                    justify-content: flex-end;
                 }
 
                 .course-list li {
                     display: flex;
                     align-items: center;
                     width: 45%; /* Adjust to fit two items per row */
-                    margin-bottom: 20px;
-                    justify-content: center;
+                    margin-bottom: 10px;
                 }
 
                 .course-logo {
@@ -67,7 +67,7 @@
                     min-width: 250px;
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    justify-content: flex-end;
                 }
 
                 .left-column {
@@ -125,7 +125,7 @@
                                 </div>
                                 {{ if eq .school.name "University of California, Berkeley" }}
                                 <div class="relevant-courses">
-                                    <h6>Relevant Courses:</h6>
+                                    <h6 style="text-align: center;">Relevant Courses:</h6>
                                     <ul class="course-list">
                                         <li>
                                             <img src="/logos/cs70.png" alt="CS70 Logo" class="course-logo">
