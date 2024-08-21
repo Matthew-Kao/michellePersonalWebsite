@@ -126,9 +126,9 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "M Kao"
-    subtitle: "Graduated from UC Berkeley with a Bachelor's Degree in Computer Science at 19"
-    content: "A young software engineer specializing in web and mobile app development. I am currently looking for new opportunities post-graduation and am open to any opportunities in the field of computer science."
+    title: "Michelle Kao"
+    subtitle: "Incoming student at UCLA pursuing a Bachelor's Degree in Data Science"
+    content: "A young data scientist passionate about AI and data analytics, seeking new opportunities and open to any role in the field of data science."
     image: /images/gradpic.jpg
     bottomImage:
       enable: true
@@ -136,7 +136,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "https://drive.google.com/file/d/1WHTjjbHk4_90pq1GXyrWv3YQXhoOiPHN/view?usp=sharing"
+      url: "https://drive.google.com/file/d/191AbwPgZ1fyvng-EzWVYBWyMfrbulTYD/view?usp=drive_link"
       download: true
       newPage: false
     socialLinks:
