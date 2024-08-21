@@ -230,7 +230,7 @@ params:
           url: "https://www.ucla.edu/"
           logo: "logos/uclalogo.png"
         date: "2023 - 2025"
-
+        GPA: "3.7 out of 4.0"
       # - title: "Associate of Science in Computer Science"
       #   school:
       #     name: "Diablo Valley College"
