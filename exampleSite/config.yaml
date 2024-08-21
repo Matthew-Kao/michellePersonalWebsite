@@ -142,7 +142,7 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-linkedin
-          url: https://linkedin.com/in/mattkao
+          url: https://www.linkedin.com/in/michelle-kao-687286296/
         - icon: fab fa-github
           url: https://github.com/Matthew-Kao
 
@@ -150,18 +150,12 @@ params:
   skills:
     - category: "Frontend"
       skills:
-        - name: "React"
-          logo: "logos/React.png"
         - name: "HTML"
           logo: "logos/Html.png"
         - name: "CSS"
           logo: "logos/Css.png"
         - name: "JavaScript"
           logo: "logos/Javascript.png"
-        - name: "Bootstrap"
-          logo: "logos/bootstrap.png"
-        - name: "Flutter"
-          logo: "logos/Flutter.png"
     - category: "Backend"
       skills:
         - name: "Node.js"
@@ -184,12 +178,13 @@ params:
           logo: "logos/java.png"
         - name: "C"
           logo: "logos/c.png"
-        - name: "Dart"
-          logo: "logos/dart.png"
-        - name: "Ruby"
-          logo: "logos/ruby.png"
         - name: "SQL"
           logo: "logos/sql.png"
+        - name: "R"
+          logo: "logos/R.jpeg"
+        - name: "Matlab"
+          logo: "logos/matlab.jpg"
+
     - category: "Tools"
       skills:
         - name: "GitHub"
