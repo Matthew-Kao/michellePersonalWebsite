@@ -126,7 +126,7 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Matthew Kao"
+    title: "M Kao"
     subtitle: "Graduated from UC Berkeley with a Bachelor's Degree in Computer Science at 19"
     content: "A young software engineer specializing in web and mobile app development. I am currently looking for new opportunities post-graduation and am open to any opportunities in the field of computer science."
     image: /images/gradpic.jpg
