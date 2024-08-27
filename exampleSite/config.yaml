@@ -129,7 +129,7 @@ params:
     title: "Michelle Kao"
     subtitle: "Incoming student at UCLA pursuing a Bachelor's Degree in Data Science"
     content: "A young data scientist passionate about AI and data analytics, seeking new opportunities and open to any role in the field of data science."
-    image: /images/michellePic.jpeg
+    image: logos/michellePic.jpeg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
