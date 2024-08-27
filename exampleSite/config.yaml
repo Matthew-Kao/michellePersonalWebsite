@@ -292,9 +292,6 @@ params:
           - "OOP"
           - "Scikit-learn (PCA)"
           - "Genomic Data Analysis"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/Matthew-Kao/Ants
 
       - title: Demographic Analysis
         content: This project involved conducting a detailed demographic analysis of Nutrigenme users across Indonesia, with a particular focus on BMI distribution and demographic characteristics in urban areas like Jakarta. Through geographic mapping and demographic modeling, BMI trends were visualized across the country, identifying patterns in population density and gender distribution. The analysis offered insights into BMI variations within Jakarta’s districts, enabling targeted health interventions and providing valuable data for product development tailored to the health and wellness needs of the population.
@@ -305,10 +302,6 @@ params:
           - "Matplotlib"
           - "Geographic Information Systems (GIS)"
 
-        links:
-          - icon: fab fa-github
-            url: https://github.com/ronaldarifin/calhacks-10
-
       - title: Fish.io
         content: In this project, as a lead mentor for a team of 8, the goal was to develop Fish.io, a multiplayer game focused on ocean and biodiversity conservation, utilizing C++, Unity Engine, and Blender for 3D modeling. Key contributions included implementing back-end server logic for real-time multiplayer interactions, integrating character models and game features into the backend, and developing core game features such as scoring and dynamic content updates. The result was a scalable and engaging game that showcased effective project management and technical execution during the final semester showcase.
         image: logos/michelleproject3.jpeg
@@ -317,10 +310,6 @@ params:
           - "Unity Engine"
           - "Blender"
           - "Multiplayer networking"
-
-        links:
-          - icon: fab fa-google
-            url: https://docs.google.com/presentation/d/1xeyuUe24Y-QnrahPsSqPCXbBhUcXJbVRDeKv8cKmkVg/edit#slide=id.g128c0204154_0_794
 
   #Contact
   contact:
