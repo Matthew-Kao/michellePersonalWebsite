@@ -129,7 +129,7 @@ params:
     title: "Michelle Kao"
     subtitle: "Incoming student at UCLA pursuing a Bachelor's Degree in Data Science"
     content: "A young data scientist passionate about AI and data analytics, seeking new opportunities and open to any role in the field of data science."
-    image: /images/gradpic.jpg
+    image: /images/michellePic.jpeg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -342,9 +342,9 @@ params:
       enable: false
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com/Matthew-Kao
-      linkedin: https://linkedin.com/in/mattkao
-      instagram: https://www.instagram.com/matthewkao__/
+      github: https://github.com/kaomichelle
+      linkedin: https://www.linkedin.com/in/michelle-kao-687286296/
+      instagram: https://www.instagram.com/kaomichellee/
 
   # List pages like blogs and posts
   listPages:
