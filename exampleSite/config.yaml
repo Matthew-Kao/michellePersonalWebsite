@@ -283,39 +283,41 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Ants vs Bees
-        content: Ants vs Bees is my favorite project, born out of my love for video games and my childhood dream to become a video game developer, which inspired me to major in Computer Science. This project involved creating a game similar to Plants vs Zombies, where I used Object-Oriented Programming to design different classes of ants and bees, each with unique abilities. I developed the game using Python and Tkinter for the GUI, implementing various abstract data structures to manage the game's state and logic.
-        image: /images/projects/antsvsbees.png
+      - title: Ancestry-Adjusted Polygenic Risk Scores (PRS)
+        content: In this project, a method was developed to adjust Polygenic Risk Scores (PRS) for obesity based on individual ancestry, thereby improving risk prediction accuracy across diverse populations. Principal Component Analysis (PCA) was used to differentiate ancestries using genomic data from the 1000 Genomes Project, uncovering the variance in risk distribution across ethnic groups. A linear regression model was designed to adjust PRS, reducing bias for each ancestry group. This adjustment led to more precise obesity risk classification, which was validated through adjusted PRS distributions, ensuring more equitable health assessments across populations.
+        image: logos/michelleproject1.jpeg
         badges:
           - "Python"
-          - "GUI"
+          - "Pandas"
           - "OOP"
+          - "Scikit-learn (PCA)"
+          - "Genomic Data Analysis"
         links:
           - icon: fab fa-github
             url: https://github.com/Matthew-Kao/Ants
 
-      - title: Resume Builder.AI
-        content: ResumeBuilder.AI is an innovative solution designed to streamline the job application process by automatically tailoring resumes to specific job descriptions. Inspired by my own journey as a recent graduate facing the challenges of job hunting, this project leverages advanced AI technologies to enhance resume relevance and impact. Utilizing word2vec for word embeddings and Convex's vector search, the application compares job postings with a comprehensive list of projects and experiences, selecting the five most pertinent ones. Additionally, an LLM like OpenAI's GPT fine-tunes project descriptions to align perfectly with job requirements. Developed with a tech stack including Python, OpenAI, Gradio, Convex, LLM, word2vec, and GitHub.
-        image: /images/projects/rbAI.png
+      - title: Demographic Analysis
+        content: This project involved conducting a detailed demographic analysis of Nutrigenme users across Indonesia, with a particular focus on BMI distribution and demographic characteristics in urban areas like Jakarta. Through geographic mapping and demographic modeling, BMI trends were visualized across the country, identifying patterns in population density and gender distribution. The analysis offered insights into BMI variations within Jakarta’s districts, enabling targeted health interventions and providing valuable data for product development tailored to the health and wellness needs of the population.
+        image: logos/michelleproject2.jpeg
         badges:
           - "Python"
-          - "LLM"
-          - "Gradio"
-          - "Convex"
-          - "Word2Vec"
+          - "Geopandas"
+          - "Matplotlib"
+          - "Geographic Information Systems (GIS)"
+
         links:
           - icon: fab fa-github
             url: https://github.com/ronaldarifin/calhacks-10
 
-      - title: Cryptok
-        content: Cryptok is a Web3 social media platform developed to foster a more transparent and equitable environment for content distribution, particularly for digital creators and freelancers. As computer science students from Berkeley, we were motivated to dive into the world of Web3 by building our own project. Traditional Web2 platforms like YouTube have centralized control over content distribution, allowing them to prioritize or demote content based on their preferences. Cryptok disrupts this model by utilizing blockchain technology to ensure that user engagement directly influences content visibility through tokenized interactions. Each interaction, such as likes or comments, is recorded on the Ethereum blockchain via smart contracts, which store details like user ID, type of interaction, and timestamp, and calculate the number of tokens earned. Users can cash out tokens at any time, with token values fluctuating based on overall engagement.
-        image: /images/projects/cryptok.png
+      - title: Fish.io
+        content: In this project, as a lead mentor for a team of 8, the goal was to develop Fish.io, a multiplayer game focused on ocean and biodiversity conservation, utilizing C++, Unity Engine, and Blender for 3D modeling. Key contributions included implementing back-end server logic for real-time multiplayer interactions, integrating character models and game features into the backend, and developing core game features such as scoring and dynamic content updates. The result was a scalable and engaging game that showcased effective project management and technical execution during the final semester showcase.
+        image: logos/michelleproject3.jpeg
         badges:
-          - "Flutter"
-          - "Web3"
-          - "Solidity"
-          - "Smart Contracts"
-          - "AWS"
+          - "C++"
+          - "Unity Engine"
+          - "Blender"
+          - "Multiplayer networking"
+
         links:
           - icon: fab fa-google
             url: https://docs.google.com/presentation/d/1xeyuUe24Y-QnrahPsSqPCXbBhUcXJbVRDeKv8cKmkVg/edit#slide=id.g128c0204154_0_794
